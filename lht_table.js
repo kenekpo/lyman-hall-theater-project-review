@@ -15,15 +15,13 @@
 let thisDay = new Date("October 1, 2021");
 
 // Declare a variable to store the HTML structure of the events table
-let tableHTML = `
-    <table id="eventTable">
+let tableHTML = ` <table id="eventTable">
         <caption>Upcoming Events</caption>
         <tr>
             <th>Date</th>
             <th>Event</th>
             <th>Price</th>
-        </tr>
-`;
+        </tr>`;
 
 // Declare the endDate variable (14 days after thisDay)
 let endDate = new Date(thisDay.getTime() + 14 * 24 * 60 * 60 * 1000);
@@ -43,8 +41,7 @@ for (let i = 0; i < eventDates.length; i++) {
                <td>${eventDay} @ ${eventTime}</td>
                <td>${eventDescriptions[i]}</td>
                <td>${eventPrices[i]}</td>
-           </tr>
-       `;
+           </tr> `;
    }
 }
 
